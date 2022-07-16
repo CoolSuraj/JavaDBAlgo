@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ConditionalsCalc {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
+/*	
 		int a= sc.nextInt();
 		int b = sc.nextInt();
 		int c =sc.nextInt();
@@ -32,7 +32,19 @@ public class ConditionalsCalc {
 //		if(c>max)
 //			max=c;
 		
-		System.out.println(max);
+		System.out.println(max);  */
+		
+		/**///To check the case of alphabets
+		char ch = sc.next().trim().charAt(0);  //this is how you take char input
+		//System.out.println(ch);
+		if(ch>='a'  && ch <='z')
+		{
+			System.out.println("lower case");
+			
+		}
+		else if(ch>='A'&&ch<='Z') {
+			System.out.println("Upper case");
+		}/**/
 		
 		
 	}
