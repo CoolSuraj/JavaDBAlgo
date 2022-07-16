@@ -45,7 +45,7 @@ public class ConditionalsCalc {
 		else if(ch>='A'&&ch<='Z') {
 			System.out.println("Upper case");
 		}/**/
-		
+		sc.close();
 		
 	}
 }
