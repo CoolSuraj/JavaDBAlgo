@@ -1,7 +1,7 @@
 package methods;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+
 
 public class Method1 extends Object{
 
@@ -9,8 +9,10 @@ public class Method1 extends Object{
 //		int p = Math.addExact(-1, 2);  //inbuilt method
 //		System.out.println(p);
 //		
-		//ArrayList<Character> A = new ArrayList<>();
-		String A = "RRGGRRGGGGRR";  //find GGRR or RRGG how many times 
+
+		
+		
+		String A = "RRGGRRGGGGRR";  //find GGRR or RRGG how many times /*This Question asked in Codenation 2022 July*/
 		int count=0;
 		for(int i = 0;i<A.length()-3;i++) {
 			if(A.charAt(i)!=A.charAt(i+1)) {
@@ -25,7 +27,13 @@ public class Method1 extends Object{
 			
 		}
 		System.out.println(count);
+		
+		
+		
+		
 	}
+	
+	
 	
 	static int patternCounter(ArrayList<String> temp) {
 		int count=0;
