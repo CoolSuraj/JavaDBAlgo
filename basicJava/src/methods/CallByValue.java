@@ -18,6 +18,7 @@ public class CallByValue {
 		i=j;
 		j=temp;
 		//this value will not change actual a & b as here we are not passing reference
+//		and the scope of i & j are only till this function block
 	}
 
 	static void changeFirstValue(int[] nums) {
