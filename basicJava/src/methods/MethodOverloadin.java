@@ -9,20 +9,20 @@ public class MethodOverloadin {
 		funcPrint("kunal"); 
 	}
 
-	private static void funcPrint(String string) {
+	 static void funcPrint(String string) {
 		System.out.println(string);
 		
 	}
 
-	private static void funcPrint(int i, int j) {
+	 static void funcPrint(int i, int j) {
 System.out.println(i+" "+j);		
 	}
 
-	private static void funcPrint(int a) {
+	 static void funcPrint(int a) {
 		System.out.println(a);
 	}
 
-	private static void funcPrint() {
+	 static void funcPrint() {
 		System.out.println("no params");
 	}
 
