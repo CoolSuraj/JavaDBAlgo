@@ -19,7 +19,10 @@ public class OrderAgonasticBinarySearch {
 		int end = arr.length - 1;
 		if (arr[start] > arr[end]) {
 			return DescendingOrderArrayBinarySearch(arr, target, start, end);
-		} else {
+		} else if(arr[start]==arr[end]){
+			return target == arr[start] ? start : -1 ;  //in a sorted array if start element equal to end that means no other element is present
+		}
+		else {
 			return AscendingOrderArrayBinarySearch(arr, target, start, end);
 		}
 
