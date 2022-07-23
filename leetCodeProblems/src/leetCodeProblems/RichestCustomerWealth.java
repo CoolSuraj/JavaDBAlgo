@@ -11,6 +11,8 @@ public class RichestCustomerWealth {
 			if (sum > maxWealth) {
 				maxWealth = sum;
 			}
+			//Math.max(sum,maxWealth);
+			System.out.println();
 		}
 		return maxWealth;
 

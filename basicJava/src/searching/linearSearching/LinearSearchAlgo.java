@@ -1,4 +1,4 @@
-package searching;
+package searching.linearSearching;
 
 public class LinearSearchAlgo {
 	public static void main(String[] args) {
