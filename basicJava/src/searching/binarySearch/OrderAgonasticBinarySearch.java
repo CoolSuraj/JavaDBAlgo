@@ -27,10 +27,10 @@ public class OrderAgonasticBinarySearch {
 		} else {
 			 return AscendingOrderArrayBinarySearch(arr, target, start, end);
 		}
-		//This is the shortcut given below above is just to separately show the things
+//		This is the shortcut given below above is just to separately show the things
 		
-		/*
-		boolean isAsc = arr[start] > arr[end];
+	/*
+		boolean isAsc = arr[start] < arr[end];
 		while (start <= end) {
 
 			int mid = start + ((end - start) / 2);
@@ -55,7 +55,7 @@ public class OrderAgonasticBinarySearch {
 		}
 
 		return -1;
-	*/
+*/
 	}
 
 	static int AscendingOrderArrayBinarySearch(int[] arr, int target, int start, int end) {
