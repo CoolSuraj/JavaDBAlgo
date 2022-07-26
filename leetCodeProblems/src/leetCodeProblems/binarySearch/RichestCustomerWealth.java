@@ -1,4 +1,4 @@
-package leetCodeProblems;
+package leetCodeProblems.binarySearch;
 //https://leetcode.com/problems/richest-customer-wealth/submissions/
 public class RichestCustomerWealth {
 	public int maximumWealth(int[][] accounts) {

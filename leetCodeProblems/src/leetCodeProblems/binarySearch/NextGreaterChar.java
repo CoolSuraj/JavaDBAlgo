@@ -1,4 +1,4 @@
-package leetCodeProblems;
+package leetCodeProblems.binarySearch;
 
 public class NextGreaterChar {
 //	https://leetcode.com/problems/find-smallest-letter-greater-than-target/submissions/
