@@ -8,9 +8,15 @@ public class RotatedBinarySearch {
 		int target = 3;
 		System.out.println(search(arr, target));
 	}
+	
+	static int HowManyTimesArrayRotated(int[] arr) {
+		return findPivot(arr) +1 ;  //pivot index +1 will be the times loop rotated
+	}
 
 	static int search(int[] nums, int target) {
 		int pivot = findPivot(nums);
+		
+		
 
 		// if you did not find a pivot, it means the array is not rotated
 		if (pivot == -1) {
@@ -96,6 +102,11 @@ public class RotatedBinarySearch {
 					return end-1;
 				}
 				end--;
+			}else if(arr[mid] > arr[start] || arr[start] == arr[end] && arr[mid] > arr[end]) {
+				start = mid+1;
+			}
+			else {
+				end = mid-1;
 			}
 //            if (arr[mid] <= arr[start]) {
 //                end = mid - 1;
