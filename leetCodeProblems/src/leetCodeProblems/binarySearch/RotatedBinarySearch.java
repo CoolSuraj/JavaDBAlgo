@@ -92,8 +92,8 @@ public class RotatedBinarySearch {
 
 				start++;
 				// this to check if end is pivot
-				if (arr[end] > arr[end - 1]) {
-					return end;
+				if (arr[end] < arr[end - 1]) {
+					return end-1;
 				}
 				end--;
 			}
