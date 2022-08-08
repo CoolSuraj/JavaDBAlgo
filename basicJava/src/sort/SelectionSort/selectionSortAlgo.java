@@ -18,13 +18,17 @@ public class selectionSortAlgo {
 		for (int i = 0; i < arr.length; i++) {
 			int lastIndex = arr.length - i - 1;
 			int maxIndex = getMaxIndex(arr, 0, lastIndex);
-			swapElementsOfArray(arr, lastIndex, maxIndex);
+			
+			//whatever we find as max put it as a last element 
+			swapElementsOfArray(arr, maxIndex, lastIndex);
+			//we can do the opposite for min index selection sort can also work that way
 
 		}
 
 	}
 
 	static int getMaxIndex(int[] arr, int start, int end) {
+		//getting the array in between start to end and sending the index
 		int maxIndex = start;
 		for (int i = start; i <= end; i++) {
 			if (arr[i] > arr[maxIndex]) {
