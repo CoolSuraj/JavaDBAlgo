@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -39,6 +40,52 @@ public class ArrayListUse {
 //		for (int i = 0; i < numArray.length; i++) {
 //			System.out.println(numArray[i]);
 //		}
+
+//		for(int i =0 ; i<al.size() ; i++) {
+//			System.out.println(al.get(i));
+//		}
+
+//		for(int i: al) {
+//			System.out.println(i);
+//		}
+
+//		Iterator<Integer> iter = al.iterator();
+
+//		for(;iter.hasNext();) {
+//			System.out.println(iter.next());
+//		}
+//		while(iter.hasNext()) {
+//			System.out.println(iter.next());
+//		}
+		Integer[] arr = { 3, 1, 4, 5, 2 };
+
+		List<Integer> unsorted = Arrays.asList(arr);
+		System.out.println("before sort ");
+		unsorted.forEach(num -> System.out.print(num + " "));
+		System.out.println("\nafter sort ");
+		bubbleSort(unsorted);
+		unsorted.forEach(num -> System.out.print(num + " "));
+
+	}
+
+	// 3 1 4 5 2
+	static void bubbleSort(List<Integer> al) {
+
+		for (int i = 0; i < al.size(); i++) {
+
+			for (int j = 1; j < al.size() - i; j++) {
+				if (al.get(j) < al.get(j - 1)) {
+
+					// swap that ones
+					int temp = al.get(j - 1);
+					al.set(j - 1, al.get(j));
+					al.set(j, temp);
+
+				}
+
+			}
+
+		}
 
 	}
 
