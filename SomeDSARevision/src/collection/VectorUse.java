@@ -1,4 +1,6 @@
+package collection;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Vector;
 
 /**
@@ -17,7 +19,7 @@ public class VectorUse {
 	public static void main(String[] args) {
 		//Vector is same as ArrayList but this is Thread Safe
 		
-		Vector<Integer> vector = new Vector<Integer>();
+		List<Integer> vector = new Vector<Integer>();
 		vector.add(3);
 		vector.add(4);
 		vector.add(5);
