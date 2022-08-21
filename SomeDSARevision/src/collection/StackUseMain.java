@@ -1,5 +1,7 @@
 package collection;
 
+import java.util.Stack;
+
 import pojo.Employee;
 
 public class StackUseMain {
@@ -38,6 +40,19 @@ public class StackUseMain {
 //		
 		
 		System.out.println(lls.peek());
+		
+		//Java.util.Stack
+		
+		Stack<Employee> st = new Stack<Employee>();
+		st.push(suraj);
+		st.push(sanjay);
+		System.out.println("before poping "+st.peek());
+		st.pop();
+		System.out.println("after poping "+st.peek());
+		
+		
+		//Doc Says good implementation is provided by Deque interface impls
+//		Deque<Employee> stackA = new ArrayDeque<Employee>() ;
 	}
 
 }
