@@ -18,17 +18,28 @@ public class DoublyLinkedListImpl {
 		employees.add(suraj);
 		employees.addFirst(abhi);
 		employees.addLast(ayo);
-		employees.add(2, sanjay);
+		employees.add(2, sanjay); //this adds to Last
 		
 		Iterator iter = employees.iterator();
 		
 		System.out.print("Head -> ");
 		while(iter.hasNext()) {
-			System.out.print(iter.next()+" -> ");
+			System.out.print(iter.next()+" <-> ");
 		}
 		System.out.print("null");
 		
+//		employees.remove();  //this removes first One
+		employees.removeFirst();
+		employees.removeLast();
+		employees.remove(sanjay);
+		System.out.println();
 		
+		iter = employees.iterator();
+		System.out.print("Head -> ");
+		while(iter.hasNext()) {
+			System.out.print(iter.next()+" <-> ");
+		}
+		System.out.print("null");
 
 	}
 

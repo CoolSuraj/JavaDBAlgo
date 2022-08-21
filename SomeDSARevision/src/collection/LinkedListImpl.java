@@ -26,6 +26,8 @@ public class LinkedListImpl {
 		el.printList();
 		System.out.println("\n Removed Node: ");
 		System.out.println(el.RemoveFrontNode());
+		
+		LinkedList<Integer> intlist = new LinkedList<Integer>();
 
 	}
 

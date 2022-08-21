@@ -37,4 +37,13 @@ public class EmployeeLinkedList {
 		}
 		System.out.print("null");
 	}
+	
+	public Employee headEmployee() {
+		if(head!=null) {
+			return head.getEmployee();
+		}
+		else {
+			return null;
+		}
+	}
 }
