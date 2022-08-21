@@ -1,6 +1,7 @@
 package collection;
 
 import java.util.LinkedList;
+import java.util.ListIterator;
 
 import pojo.Employee;
 
@@ -37,7 +38,7 @@ class LinkedStack {
 
 	public void push(Employee employee) {
 		stack.push(employee); // this is already given by Linked List implementation we just need to make this
-								// class such that people should not use other menthod
+								// class such that people should not use other method
 	}
 
 	public void pop() {
@@ -46,5 +47,12 @@ class LinkedStack {
 
 	public Employee peek() {
 		return stack.pop();
+	}
+	
+	public void printStack() {
+		ListIterator<Employee> iter = stack.listIterator();
+		while(iter.hasNext()) {
+			System.out.print(iter.next());
+		}
 	}
 }
