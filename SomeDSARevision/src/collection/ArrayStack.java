@@ -5,7 +5,7 @@ import pojo.Employee;
 public class ArrayStack {
 
 	private Employee[] stack;
-	private int top; //top means next available space so elemnt is always at top-1;
+	private int top; //top means next available space so element is always at top-1;
 
 	public ArrayStack(int capacity) {
 		stack = new Employee[capacity];
