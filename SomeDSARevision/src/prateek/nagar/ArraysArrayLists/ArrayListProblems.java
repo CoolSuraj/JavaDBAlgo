@@ -1,4 +1,4 @@
-package prateek.nagar;
+package prateek.nagar.ArraysArrayLists;
 
 import java.util.ArrayList;
 import java.util.Arrays;

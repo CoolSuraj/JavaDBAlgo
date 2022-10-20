@@ -1,4 +1,4 @@
-package prateek.nagar;
+package prateek.nagar.ArraysArrayLists;
 
 import java.util.HashMap;
 import java.util.HashSet;
