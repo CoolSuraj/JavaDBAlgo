@@ -32,7 +32,9 @@ public class SimpleHashTable {
 
 			}
 
-			if (stopIndex == hashedKey) {
+			if (hashtable[hashedKey]!=null && hashtable[hashedKey].key.equals(key)) {
+				
+			}else {
 				return -1;
 			}
 		}
@@ -83,6 +85,25 @@ public class SimpleHashTable {
 
 	}
 
+	public Employee remove(String key) {
+		int hashedKey = findKey(key);
+		if (hashedKey == -1) {
+			return null;
+		} else {
+			Employee deleted = hashtable[hashedKey].getEmp();
+			//hashtable[hashedKey] = null; //this is an easy solution but linear probing will give us issue so we will use different approach
+			StoredEmployee[] oldHashTable = hashtable;
+			
+			hashtable = new StoredEmployee[oldHashTable.length];
+			for(int i=0;i<oldHashTable.length;i++) {
+				if(oldHashTable[i]!=null) {
+					put(oldHashTable[i].key, oldHashTable[i].emp);
+				}
+			}
+			return deleted;
+		}
+	}
+
 	public void printHashTable() {
 		if (hashtable.length != 0) {
 			for (int i = 0; i < hashtable.length; i++) {
@@ -90,7 +111,7 @@ public class SimpleHashTable {
 				if (emp == (null)) {
 					// removing null from array to be printed
 				} else {
-					System.out.println(i + " " + emp.getKey() + " " + emp.getEmp()); //i is the position in array
+					System.out.println(i + " " + emp.getKey() + " " + emp.getEmp()); // i is the position in array
 				}
 			}
 		}
